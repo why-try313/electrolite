@@ -1,5 +1,6 @@
 # ⚡️ Electrolite
-Abstraction library for Electron.
+Abstraction library for Electron.<br/>
+Intended to be used as a NPM module, eletrolite is an abstraction library to make Electron easy to use.<br/>
 Sets a standard `preload` file, handles `ipcMain` bridge, adds a global router and window specific router and simplifies window creation
 
 <br>
@@ -64,6 +65,9 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 <details>
   <summary>🔽 main.js using electrolite + express routes</summary>
+<br/>
+First install the library via <code>npm i --save https://github.com/why-try313/electrolite.git</code>
+<br/><br/>
 
 ```javascript
 const electrolite = require("./electrolite/index.js");
@@ -81,7 +85,7 @@ electrolite.on("global-event", () => "value for all windows");
 
 // access via index.html: window._API_.on(event, handler)
 win.emit("window-specific-event", "myData");
-electrolite.meit("global-event", "globalData");
+electrolite.emit("global-event", "globalData");
 
 ```
 </details>
@@ -90,8 +94,8 @@ electrolite.meit("global-event", "globalData");
 
 ## Installation
 
-- Clone or copy the project inside your project
-- Import `electrolite` in your electron entry script: <br>`const electrolite = require("path/to/electrolite/index.js")`
+- Install this repo as NPM module with <code>npm i --save https://github.com/why-try313/electrolite.git</code>
+- Import `electrolite` in your electron entry script: <br>`const electrolite = require("electrolite")`
   - Set global routes following `express` schema (see express notes)
     ```javascript
      electrolite.use(authFunction)
