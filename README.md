@@ -94,7 +94,7 @@ electrolite.emit("global-event", "globalData");
 
 ## Installation
 
-- Make sur `electron` is installed in your project
+- Make sure `electron` is installed in your project
 - Install this repo as NPM module with <code>npm i --save https://github.com/why-try313/electrolite.git</code>
 - Import `electrolite` in your electron entry script: <br>`const electrolite = require("electrolite")`
   - Set global routes following `express` schema (see express notes)
