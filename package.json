@@ -1,0 +1,27 @@
+{
+  "name": "electrolite",
+  "version": "1.0.5",
+  "description": "Abstraction library to make Electron easy to use",
+  "keywords": [
+    "electron",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/why-try313/electrolite#readme",
+  "bugs": {
+    "url": "https://github.com/why-try313/electrolite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/why-try313/electrolite.git"
+  },
+  "license": "UNLICENSED",
+  "author": "why-try313",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
